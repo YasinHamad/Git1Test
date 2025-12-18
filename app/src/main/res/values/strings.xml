@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Git1Test</string>
+    <string name="var01">var01</string>
+    <string name="var02">var02</string>
 
 </resources>
