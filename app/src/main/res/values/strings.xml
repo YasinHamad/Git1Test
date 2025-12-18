@@ -1,11 +1,4 @@
 <resources>
     <string name="app_name">Git1Test</string>
     <string name="var01">var01</string>
-    <string name="var02">var02</string>
-    <string name="var03">var03</string>
-    <string name="var04">var04</string>
-    <string name="var05">var05</string>
-    <string name="var06">var06</string>
-    <string name="var07">var07</string>
-    <string name="var08">var08</string>
 </resources>
