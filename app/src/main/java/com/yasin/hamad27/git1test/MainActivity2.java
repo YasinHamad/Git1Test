@@ -1,6 +1,9 @@
 package com.yasin.hamad27.git1test;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -9,6 +12,9 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity2 extends AppCompatActivity {
+
+    private EditText editText;
+    SharedPreferences sp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,5 +26,12 @@ public class MainActivity2 extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
+        editText = findViewById(R.id.et_name_retrive);
+//        sp = getSharedPreferences("name", Context.MODE_PRIVATE);
+        sp = getPreferences(Context.MODE_PRIVATE);
+
+        editText.setText(sp.getString("name", ""));
+
     }
 }
